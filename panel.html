@@ -10,6 +10,7 @@
 <body>
     <p>Test Website</p>
 
+    <p id='localStorageTest'>localStorage is not yet evaluated</p>
 
     <script>
 
@@ -17,6 +18,19 @@
         console.log('Office Initilizing');
         Office.initialize = function (reason) {
             console.log('Office Initilized');
+            const output = document.getElementById('localStorageTest');
+
+            if (window.localStorage === null) {
+                output.innerHTML = 'localStorage is <b>null</b>'
+            } else if (window.localStorage === undefined) {
+                output.innerHTML = 'localStorage is <b>undefined</b>'
+            } else {
+                output.innerHTML = 'localStorage is <b>available</b>'
+            }
+
+
+
+
         };
 
 
