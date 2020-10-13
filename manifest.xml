@@ -49,11 +49,11 @@
       <Hosts>
         <Host xsi:type="MailHost">
           <DesktopFormFactor>
-            <FunctionFile resid="functionFile" />
+            <!-- <FunctionFile resid="functionFile" /> -->
             <!-- NEEDS Exchange 2016 CU6 -->
-            <ExtensionPoint xsi:type="Events">
+            <!-- <ExtensionPoint xsi:type="Events">
               <Event Type="ItemSend" FunctionExecution="synchronous" FunctionName="validateMail" />
-            </ExtensionPoint>
+            </ExtensionPoint> -->
             <!-- Message compose form -->
             <ExtensionPoint xsi:type="MessageComposeCommandSurface">
               <OfficeTab id="TabDefault">
@@ -90,7 +90,7 @@
           <bt:Image id="red-icon-80" DefaultValue="https://lokimidgard.github.io/TestOwaIcons/images/Icon80.png"/>
         </bt:Images>
         <bt:Urls>
-          <bt:Url id="functionFile" DefaultValue="https://lokimidgard.github.io/TestOwaIcons/function.html"/>
+          <!-- <bt:Url id="functionFile" DefaultValue="https://lokimidgard.github.io/TestOwaIcons/function.html"/> -->
           <bt:Url id="contentPanelUrl" DefaultValue="https://lokimidgard.github.io/TestOwaIcons/panel.html"/>
         </bt:Urls>
         <bt:ShortStrings>
